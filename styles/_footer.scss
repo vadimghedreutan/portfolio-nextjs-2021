@@ -16,8 +16,13 @@
   &__content {
     display: flex;
     flex-direction: row;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    @include respond(sm) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
 
     p {
       color: var(--clr-gray);
