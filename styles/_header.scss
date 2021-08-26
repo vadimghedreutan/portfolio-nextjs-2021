@@ -1,0 +1,137 @@
+@import './breakpoints.scss';
+
+.navigation {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 1.75rem 0;
+
+    @include respond(lg) {
+      flex-direction: row;
+      margin-left: auto;
+      padding: 0;
+    }
+
+    li {
+      padding: 0.5rem 0.75rem;
+      display: flex;
+      align-items: center;
+
+      a {
+        position: relative;
+        font-family: var(--oswald-font);
+        font-weight: bold;
+        line-height: 1.375;
+        color: black;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 0px;
+          height: 3px;
+          margin: auto;
+          background: transparent;
+          transition: width 0.3s ease, background-color 0.3s ease;
+        }
+        &:hover::after {
+          background: var(--clr-green);
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(lg) {
+    width: auto;
+    position: static;
+    display: block;
+    justify-content: flex-start;
+  }
+
+  a {
+    font-family: var(--oswald-font);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+    display: inline-block;
+    color: black;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+
+    @include respond(lg) {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+
+    span {
+      color: var(--clr-red);
+    }
+  }
+}
+
+.btn_mobile {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  background: transparent;
+  display: block;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+
+  &:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  @include respond(lg) {
+    display: none;
+  }
+
+  svg {
+    height: 1.5rem;
+    color: black;
+  }
+}
+
+// .btn_dark {
+//   position: absolute;
+//   top: 2px;
+//   right: 50px;
+
+//   svg {
+//     height: 1.5rem;
+//   }
+
+//   @include respond(lg) {
+//     top: 30px;
+//     right: 190px;
+//   }
+// }

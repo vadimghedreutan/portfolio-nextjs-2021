@@ -1,0 +1,51 @@
+@import './breakpoints.scss';
+@import './tw_mixins.scss';
+
+.gitcards {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+  padding: 1rem 0.5rem;
+
+  &__card {
+    position: relative;
+    background-color: var(--clr-dark);
+    padding: 5rem 8rem;
+
+    color: white;
+    border-radius: 0.5rem;
+    @include transition();
+
+    &:hover {
+      @include hover();
+    }
+
+    &-content {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      display: flex;
+      flex-direction: column;
+      @include space(y, 2);
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: bold;
+        font-family: var(--oswald-font);
+        letter-spacing: 0.025em;
+      }
+
+      p {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+
+      a {
+        svg {
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}

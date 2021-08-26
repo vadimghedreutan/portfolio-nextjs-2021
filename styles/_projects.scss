@@ -1,0 +1,77 @@
+@import "./breakpoints.scss";
+
+//Grid Top
+.projects {
+  display: grid;
+  grid-row-gap: 10px;
+
+  > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__l-img,
+  &__r-img,
+  &__lb-img,
+  &__rb-img {
+    border-radius: 0.5rem;
+  }
+
+  &__l-img {
+    background-color: var(--clr-red);
+    padding: 4rem;
+  }
+
+  &__r-img {
+    background-color: var(--clr-green);
+    padding: 2rem;
+  }
+
+  &__lb-img {
+    background-color: var(--clr-green);
+    padding: 2rem;
+  }
+
+  &__rb-img {
+    background-color: var(--clr-red);
+    padding: 4rem;
+  }
+
+  @include respond(md) {
+    grid-template-columns: 1.5fr 0.5fr 1.5fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+
+    &__l-img {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    &__r-img {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+
+    &__lb-img {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    &__rb-img {
+      grid-area: 2 / 2 / 3 / 4;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  a {
+    transform: scale(1);
+    transition: 1s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
