@@ -53,15 +53,16 @@ section {
     font-family: var(--oswald-font);
     font-weight: 600;
     font-size: 1.5rem;
-
-    @media (max-width: 375px) {
-      font-size: 1rem;
-    }
   }
 
   hr {
     border: 2px solid var(--clr-red);
     width: 30px;
+    transform: rotate(90deg);
+
+    @include respond(sm) {
+      transform: rotate(0deg);
+    }
   }
 }
 
