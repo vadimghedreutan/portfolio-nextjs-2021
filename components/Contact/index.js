@@ -9,8 +9,8 @@ export default function COntact() {
         <div className="contact">
           <h1>Get in touch</h1>
           <p>
-            If you have a website or mobile app idea in mind or you need some
-            advice about product, feel free to <span>contact me.</span>
+            If you have a website idea in mind or you need some advice about
+            product, feel free to <span>contact me.</span>
           </p>
           <div className="contact__img">
             <Image src={profileImg} alt="Vadim Ghedreutan" />

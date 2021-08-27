@@ -2,7 +2,11 @@
 @import './tw_mixins.scss';
 
 .hero_section {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
+
+  @include respond(sm) {
+    padding: 2rem 1.5rem;
+  }
 }
 
 .hero {
