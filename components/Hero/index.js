@@ -16,8 +16,8 @@ function Hero() {
           </div>
           <div className="hero__title">
             <h1>
-              <span>Web Developer</span>
-              <span>and IT Support.</span>
+              <span>Front-End Web Developer</span>
+              <span>& IT Support.</span>
             </h1>
           </div>
 
