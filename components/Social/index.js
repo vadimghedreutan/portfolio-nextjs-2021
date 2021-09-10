@@ -1,4 +1,4 @@
-import { FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { FaInstagram, FaGithubAlt, FaLinkedin } from 'react-icons/fa'
 
 function Social() {
   return (
@@ -6,8 +6,8 @@ function Social() {
       <a href="https://www.instagram.com/vadim_ghedreutan/">
         <FaInstagram />
       </a>
-      <a href="https://twitter.com/GhedreutanVadim">
-        <FaTwitter />
+      <a href="https://github.com/vadimghedreutan">
+        <FaGithubAlt />
       </a>
       <a href="https://www.linkedin.com/in/vadimghedreutan/">
         <FaLinkedin />
