@@ -35,7 +35,7 @@ export async function getStaticProps() {
     return {
       props: {
         result,
-        revalidate: 1,
+        revalidate: 60,
       },
     }
   } catch (err) {
