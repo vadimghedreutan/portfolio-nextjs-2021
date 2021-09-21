@@ -20,7 +20,7 @@ export default function Home({ result }) {
 export async function getStaticProps() {
   try {
     let result = await fetch(
-      'https://api.github.com/users/vadimghedreutan/repos?sort=created&page=1&per_page=10'
+      'https://api.github.com/users/vadimghedreutan/repos?sort=created'
     ).then((res) => res.json())
     result = result.map(({ id, name, description, homepage, html_url }) => ({
       id,
