@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import CovidInfo from '../../images/travel_covid.png'
+import AmazonClone from '../../images/amazon_redesign.png'
 import TeemOne from '../../images/teemone.png'
 import TypeGame from '../../images/type_game.png'
 import BookShare from '../../images/book_share.png'
@@ -11,10 +11,10 @@ export default function Projects() {
       <div className="container">
         <div className="projects">
           <div className="projects__l-img">
-            <a href="https://travelwarning.netlify.app">
+            <a href="https://ghedrik.info">
               <Image
-                src={CovidInfo}
-                alt="COVID-19 Country Specific Information"
+                src={AmazonClone}
+                alt="amazon redesign clone"
                 placeholder="blur"
               />
             </a>
