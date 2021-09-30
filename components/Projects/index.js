@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import styles from './Projects.module.scss'
 
 import AmazonClone from '../../images/amazon_redesign.png'
 import TeemOne from '../../images/teemone.png'
@@ -7,10 +8,10 @@ import BookShare from '../../images/book_share.png'
 
 export default function Projects() {
   return (
-    <section className="projects_section" id="projects">
+    <section id="projects">
       <div className="container">
-        <div className="projects">
-          <div className="projects__l-img">
+        <div className={styles.projects}>
+          <div className={styles.top_l}>
             <a href="https://ghedrik.info">
               <Image
                 src={AmazonClone}
@@ -19,7 +20,7 @@ export default function Projects() {
               />
             </a>
           </div>
-          <div className="projects__r-img">
+          <div className={styles.top_r}>
             <a href="https://teemone.de">
               <Image
                 src={TeemOne}
@@ -28,12 +29,12 @@ export default function Projects() {
               />
             </a>
           </div>
-          <div className="projects__lb-img">
+          <div className={styles.bottom_l}>
             <a href="https://typeracer-3f0ce.firebaseapp.com">
               <Image src={TypeGame} alt="type racer game" placeholder="blur" />
             </a>
           </div>
-          <div className="projects__rb-img">
+          <div className={styles.bottom_r}>
             <a href="https://booksharegkapp.herokuapp.com">
               <Image
                 src={BookShare}

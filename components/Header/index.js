@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-scroll'
 import { MenuIcon } from '@heroicons/react/solid'
+import styles from './Header.module.scss'
 
 function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false)
@@ -10,13 +11,13 @@ function Header() {
   }
 
   return (
-    <nav className="navigation">
-      <div className="navigation__container">
-        <div className="logo">
+    <nav className={styles.navigation}>
+      <div className={styles.container}>
+        <div className={styles.logo}>
           <Link to="/" smooth={true}>
             VG<span>Dev</span>
           </Link>
-          <button className="btn_mobile" type="button" onClick={toggle}>
+          <button className={styles.btn_mobile} type="button" onClick={toggle}>
             <MenuIcon />
           </button>
         </div>
@@ -26,7 +27,7 @@ function Header() {
             navbarOpen ? 'flex' : 'hidden'
           }`}
         >
-          <ul className="navigation__list">
+          <ul className={styles.menu}>
             <li>
               <Link to="projects" smooth={true} duration={1000}>
                 Works

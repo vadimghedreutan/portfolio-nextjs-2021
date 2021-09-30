@@ -8,7 +8,6 @@
   --clr-gray: rgba(107, 114, 128, var(--bg-opacity));
 }
 @import './breakpoints.scss';
-@import './tw_mixins.scss';
 
 @tailwind base;
 @tailwind components;
@@ -40,44 +39,5 @@ section {
 
   @include respond(lg) {
     padding: 2.5rem 1.5rem;
-  }
-}
-
-.section_title {
-  display: flex;
-  align-items: center;
-  @include space(x, 2);
-  margin-bottom: 0.3rem;
-
-  h3 {
-    font-family: var(--oswald-font);
-    font-weight: 600;
-    font-size: 1.5rem;
-  }
-
-  hr {
-    border: 2px solid var(--clr-red);
-    width: 30px;
-    transform: rotate(90deg);
-
-    @include respond(sm) {
-      transform: rotate(0deg);
-    }
-  }
-}
-
-.social_links {
-  display: flex;
-  @include space(x, 2);
-
-  svg {
-    font-size: 1.5rem;
-    cursor: pointer;
-    transform: scale(1);
-    transition: 1s ease;
-
-    &:hover {
-      transform: scale(1.4);
-    }
   }
 }

@@ -1,0 +1,25 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/tw_mixins.scss';
+
+.content {
+  display: flex;
+  align-items: center;
+  @include space(x, 2);
+  margin-bottom: 0.3rem;
+
+  h3 {
+    font-family: var(--oswald-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  hr {
+    border: 2px solid var(--clr-red);
+    width: 30px;
+    transform: rotate(90deg);
+
+    @include respond(sm) {
+      transform: rotate(0deg);
+    }
+  }
+}

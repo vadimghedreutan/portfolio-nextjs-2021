@@ -1,20 +1,21 @@
 import { motion } from 'framer-motion'
 import Social from '../Social'
 import { GrMail } from 'react-icons/gr'
+import styles from './Hero.module.scss'
 
 function Hero() {
   return (
-    <div className="hero_section">
+    <div className={styles.section}>
       <div className="container">
-        <div className="hero">
-          <div className="hero__social">
+        <div className={styles.hero}>
+          <div className={styles.icons}>
             <Social />
           </div>
-          <div className="hero__name">
+          <div className={styles.title}>
             <hr />
             <p>Vadim Ghedreutan</p>
           </div>
-          <div className="hero__title">
+          <div className={styles.description}>
             <h1>
               <span>Front-End Web Developer</span>
               <span>& IT Support.</span>
@@ -22,7 +23,7 @@ function Hero() {
           </div>
 
           <motion.div
-            className="email_logo"
+            className={styles.animation}
             animate={{
               y: [0, -30, 0],
             }}

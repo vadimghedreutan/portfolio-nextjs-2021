@@ -1,0 +1,18 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/tw_mixins.scss';
+
+.links {
+  display: flex;
+  @include space(x, 2);
+
+  svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 1s ease;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}

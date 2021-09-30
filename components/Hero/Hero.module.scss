@@ -1,0 +1,62 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/tw_mixins.scss';
+
+.section {
+  padding: 1.5rem;
+
+  @include respond(sm) {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.hero {
+  position: relative;
+  @include space(y, 2);
+}
+
+.icons {
+  margin-bottom: 1rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  @include space(x, 2);
+  margin-bottom: 0.3rem;
+
+  hr {
+    border: 2px solid var(--clr-red);
+    width: 30px;
+  }
+}
+
+.description {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    font-family: var(--oswald-font);
+    display: flex;
+    flex-direction: column;
+
+    @include respond(lg) {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+  }
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(254, 242, 242);
+  padding: 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+
+  svg {
+    font-size: 1.75rem;
+    color: var(--clr-red);
+  }
+}
