@@ -11,7 +11,7 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 },
 }
 
-function works() {
+function Works() {
   const [data] = useState(projects)
   return (
     <>
@@ -51,4 +51,4 @@ function Card({ url, title, tags }) {
   )
 }
 
-export default works
+export default Works
