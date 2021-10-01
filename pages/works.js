@@ -46,6 +46,7 @@ function Card({ link, url, title, tags }) {
           src={url}
           alt="amazon redesign clone"
           blurDataURL
+          placeholder="blur"
           className={styles.custom_img}
           layout="fill"
         />
