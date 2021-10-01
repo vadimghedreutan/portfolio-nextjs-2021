@@ -8,9 +8,9 @@ import BookShare from '../../images/book_share.png'
 
 export default function Projects() {
   return (
-    <section id="projects">
+    <section>
       <div className="container">
-        <div className={styles.projects}>
+        <div className={styles.grid}>
           <div className={styles.top_l}>
             <a href="https://ghedrik.info">
               <Image

@@ -1,9 +1,11 @@
-import { useState } from 'react'
 import { Link } from 'react-scroll'
+import { useState } from 'react'
+import { useRouter } from 'next/router'
 import { MenuIcon } from '@heroicons/react/solid'
 import styles from './Header.module.scss'
 
 function Header() {
+  const router = useRouter()
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   const toggle = () => {
@@ -14,9 +16,9 @@ function Header() {
     <nav className={styles.navigation}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Link to="/" smooth={true}>
+          <a onClick={() => router.push('/')}>
             VG<span>Dev</span>
-          </Link>
+          </a>
           <button className={styles.btn_mobile} type="button" onClick={toggle}>
             <MenuIcon />
           </button>
@@ -29,9 +31,9 @@ function Header() {
         >
           <ul className={styles.menu}>
             <li>
-              <Link to="projects" smooth={true} duration={1000}>
-                Works
-              </Link>
+              <a to="projects" onClick={() => router.push('/works')}>
+                Work
+              </a>
             </li>
             <li>
               <Link to="contact" smooth={true} duration={1000}>
