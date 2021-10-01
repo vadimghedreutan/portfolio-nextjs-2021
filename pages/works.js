@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Image from 'next/image'
 import projects from '../components/data'
 import styles from '../styles/Works.module.scss'
 import Contact from '../components/Contact'
@@ -24,7 +25,7 @@ function Works() {
             animate="enter"
             exit="exit"
             variants={variants}
-            transition={{ type: 'linear', duration: 0.3 }}
+            transition={{ type: 'linear' }}
           >
             {data.map((item) => {
               return <Card key={item.id} {...item} />
@@ -37,11 +38,17 @@ function Works() {
   )
 }
 
-function Card({ url, title, tags }) {
+function Card({ link, url, title, tags }) {
   return (
     <div className={styles.card}>
-      <a href="https://ghedrik.info">
-        <img src={url} alt="amazon redesign clone" />
+      <a href={link} className={styles.unset_img}>
+        <Image
+          src={url}
+          alt="amazon redesign clone"
+          blurDataURL
+          className={styles.custom_img}
+          layout="fill"
+        />
       </a>
       <div className={styles.content}>
         <h2>{title}</h2>
