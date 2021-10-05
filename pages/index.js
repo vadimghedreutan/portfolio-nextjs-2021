@@ -35,8 +35,8 @@ export async function getStaticProps() {
     return {
       props: {
         result,
-        revalidate: 60,
       },
+      revalidate: 60,
     }
   } catch (err) {
     return { notFound: true }

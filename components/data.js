@@ -29,10 +29,10 @@ const works = [
   },
   {
     id: 5,
-    title: 'A book to share',
-    tags: 'Python(Django), SCSS',
-    url: 'https://res.cloudinary.com/dfsmepk50/image/upload/v1633081365/book_share_qhc7xt.png',
-    link: 'https://vadimghedreutan.io',
+    title: 'Apple TV+ clone',
+    tags: 'NextJS, Sass, GraphCMS, GraphQL',
+    url: 'https://res.cloudinary.com/dfsmepk50/image/upload/v1633441983/appletv_cyxaqw.png',
+    link: 'https://apple-tv-plus-clone.vercel.app',
   },
   {
     id: 6,
@@ -47,6 +47,13 @@ const works = [
     tags: 'React, GSAP, covid19.mathdro.id_API',
     url: 'https://res.cloudinary.com/dfsmepk50/image/upload/v1633081366/travel_covid_uod3rc.png',
     link: 'https://travelwarning.netlify.com/',
+  },
+  {
+    id: 8,
+    title: 'A book to share',
+    tags: 'Python(Django), SCSS',
+    url: 'https://res.cloudinary.com/dfsmepk50/image/upload/v1633081365/book_share_qhc7xt.png',
+    link: 'https://vadimghedreutan.io',
   },
 ]
 
