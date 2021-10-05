@@ -55,6 +55,13 @@ const works = [
     url: 'https://res.cloudinary.com/dfsmepk50/image/upload/v1633081365/book_share_qhc7xt.png',
     link: 'https://vadimghedreutan.io',
   },
+  {
+    id: 9,
+    title: 'Whatsapp ChatBot app',
+    tags: 'NextJS, Sass, Firebase, Firebase-auth',
+    url: 'https://res.cloudinary.com/dfsmepk50/image/upload/v1633446647/chatbot_erwv8x.png',
+    link: 'https://whatsapp-chat-bot-app.vercel.app',
+  },
 ]
 
 export default works
